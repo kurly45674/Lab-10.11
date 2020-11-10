@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pioara Tudor</title>
+<style>
+body {
+  background-color: salmon
+}
+
+h1 {
+  color: firebrick
+  text-align: center;
+}
+
+h2 {
+  color: firebrick
+  text-align: center;
+}
+
+p {
+  color: darkred;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+h1 {
+  color: firebrick
+  text-align: center;
+}
+table, tr, td, ul {border: 2px solid black;}
+tr:hover {background-color: salmon}
+h1 {font-family: "Verdana";
+	font-style: italic;
+	font-size: 36px;}
+p {font-family: "Arial";
+	font-size: 18px;}
+
+img {border: 2px solid black;
+	border-radius: 12px;
+	width: 333px;
+	display: block;
+	padding: 2px;
+	margin: left;
+	opacity: 0.8;}
+
+</style>
+<script>
+function veziViitor()
+	{
+	document.getElementById("numeP").innerHTML="Pioara Tudor - vesnic student";
+	
+	var tabed = document.getElementById("tabel");
+	tabel.rows[1].cells[0].innerHTML="Mate pe paine";
+	tabel.rows[2].cells[0].innerHTML="Pasiunea vietii";
+	tabel.rows[3].cells[0].innerHTML="Sper sa imi placa";
+	
+	document.getElementById("pozaP").src="Familie.jpg";
+	
+	document.body.style.backgroundColor="Tomato";
+	
+	var par=document.getElementsByTagName("p");
+	var i;
+		for (i=0; i<par.length; i++){
+			par[i].style.color="magenta";
+		}
+	document.getElementById("pozaP").style.border="6px";
+	}
+
+function Varsta()
+	{
+	var azi = new Date;
+	var varstamea;
+	var annast = document.getElementById("varsta").innerHTML;
+	varstamea = azi.getFullYear() - parseInt(annast);
+	document.getElementById("varsta").innerHTML = varstamea;
+	}
+</script>
+</head>
+
+<body>
+
+<h1 id="numeP"> Pioara Tudor </h1>
+<img id="pozaP" src="PozaWord.jpg" alt="Trulli">
+<p>Nume: Pioara</p>
+<p>Preume: Tudor-Andrei</p>
+<p>E-mail: tudorpioara@yahoo.com</p>
+<p>Text/citat propriu: Cand am intrat, am sperat la bursa, acum ma rog sa nu am prea multe restante :’). </p>
+<p onmouseover = "Varsta()" id="varsta"> 2001 </p>
+<button onclick="veziViitor()">Apasa Aici</button>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Cursuri</h2>
+
+<table id="tabel">
+  <tr>
+    <th>Denumire</th>
+    <th>Perioada</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>Analiza matematica</td>
+    <td>Anul I</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/01.pdf ">Apasa aici!</a></td>
+  </tr>
+  <tr>
+    <td>Limba germana I</td>
+    <td>Anul I</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/14.pdf ">Apasa aici!</a></td>
+  </tr>
+  <tr>
+    <td>Microprocesoare</td>
+    <td>Anul III</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/33.pdf">Apasa aici!</a></td>
+  </tr>
+  
+</table>
+
+<ul>
+  <li>Desen/graphic design </li>
+  <li>Tobe/clape (muzica in general) </li>
+  <li>Sport (sala)</li>
+  <li>Star Waaars <3 </li>
+</ul>  
+
+</body>
+</html>
