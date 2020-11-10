@@ -1,0 +1,52 @@
+body {background-color: salmon;
+}
+
+h1.nume {color: firebrick;}
+
+h2.sectiuni {color: firebrick;}
+
+p {
+  color: darkred;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+h1 {
+  color: firebrick;
+  text-align: center;
+}
+
+table {background-color: salmon;}
+ul {background-color: salmon;}
+
+table, tr, td, ul {border: 2px solid black;}
+tr:hover {background-color: salmon;}
+
+h1.nume {font-family: "Verdana";
+	font-style: italic;
+	font-size: 36px;}
+p {font-family: "Arial";
+	font-size: 18px;}
+
+img.profil {border: 2px solid black;
+	border-radius: 12px;
+	width: 666px;
+	height: 1000px;
+	display: block;
+	padding: 2px;
+	opacity: 0.8;}
+
+a.linkCat {font-style: italic;
+	font-size: 24px;}
+
+#logoCat{border: 2px solid black;
+	border-radius: 12px;
+	width: 30px;
+	display: block;
+	margin: auto;
+	opacity: 0.8;}
+
+#titluCat {font-family: "Arial";
+	font-style: italic;
+	font-size: 52px;
+	color: pink;}
